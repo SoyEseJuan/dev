@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    background-color: #fcfcfc;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.grid_container{
+    display: grid;
+    grid-template:
+    "logo" auto
+    "menu_items" auto
+    "cover" auto 
+    "servis"auto
+}
+
+ul{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    
+    }
+
+.logo{
+    padding-top: 10px;
+    display: flex;
+    grid-area: logo;
+    justify-content: center;  
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.menu_items {
+    display: flex;
+    grid-area: menu_items;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    z-index: 0;
+    
+
+}
+.item{
+    color: #1f1f1f;
+}
+.cover{
+    display: flex;
+    grid-area: cover;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+p{
+    font-size:1.3rem;
+    margin: 10px;
+}
+.pais{
+    color: #ff2d2e;
+}
+.projects {
+        width:300px ;
+        height: 100px;
+        font-size:1.3rem;
+        color: #1f1f1f;
+        font-weight: 500;
+        border-radius: 10px;
+        border:4px solid #e7e7e7;
+        margin-bottom: 30px;
+        transition:all 400ms ease-out;
+        pointer-events: all; 
+}      
+
+.projects:hover{
+    color: #ff2d2e;
+    border:4px solid #ff2d2e;
+    box-shadow: 5px 5px 5px #c2c2c240;
+}
+.imgc{
+    width: 400px;
+}
+
+.icono{
+    margin-top: 5px;
+    display: block;   
+    height: 18px;
+    
+}
+
+.servis{
+grid-area: servis;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.iconser{
+    
+    width: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+   
+}
+.social{
+    display: flex;
+    justify-content:space-evenly;
+    list-style: none;
+    color: #ff2d2e;
+}
+.con{
+    display: flex;
+    justify-content: center;
+}
+.contac{
+    box-shadow: 10px 10px 0px 0px #ff2d2e;
+	background-color:transparent;
+	border:3px solid #ff2d2e;
+    width:150px ;
+    height:50px ;
+
+    font-size:1.3rem;
+    color: #ff2d2e;
+    font-weight: 500;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align:center ;
+}
+.card h1{
+    color: #1f1f1f;
+    font-size: 1.3rem;
+}
